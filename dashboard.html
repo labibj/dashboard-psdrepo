@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dashboard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="d-flex flex-column flex-grow-1 px-3">
+        <div class="row justify-content-md-center flex-grow-1">
+          <div class="col-md-11">
+            <div class="row h-100">
+              <div class="col-md-1 pt-md-5">
+                <!-- Hamburger + Collapsable Content -->
+                <div class="collapse collapse-content" id="navbarToggleExternalContent">
+                  <div class="bg-dark p-4">
+                    <h5 class="text-white h4">Collapsed content</h5>
+                    <span class="text-muted">Toggleable via the navbar brand.</span>
+                  </div>
+                </div>
+                <nav class="navbar px-0 px-md-3">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="hamburger d-flex flex-column justify-content-around text-center">
+                      <div class="hamburger__patty"></div>
+                      <div class="hamburger__patty"></div>
+                      <div class="hamburger__patty"></div>
+                    </div>
+                  </button>
+                  <a href="" class="navbar-brand d-block d-md-none mr-auto ml-2">psdrepo.com</a>
+                </nav>
+                <!-- /Hamburger + Collapsable Content -->
+              </div>
+              <!-- Header + Productivity Overview -->
+              <div class="col-md-5 pt-md-5 pl-md-0">
+                <div class="row d-none d-md-block">
+                  <div class="col-md-12 pt-1 pb-2">
+                    <!-- Logo -->
+                    <a href="" class="navbar-brand">psdrepo.com</a>
+                    <!-- /Logo -->
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="d-md-flex align-content-md-center">
+                          <h5 class="mb-md-0">Productivity overview</h5>
+                          <ul class="nav nav-tabs ml-md-auto mr-md-3" id="myTab" role="tablist">
+                            <li class="nav-item">
+                              <a class="nav-link active" id="today-tab" data-toggle="tab" href="#today" role="tab" aria-controls="today" aria-selected="true">Today</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="week-tab" data-toggle="tab" href="#week" role="tab" aria-controls="week" aria-selected="false">Week</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="month-tab" data-toggle="tab" href="#month" role="tab" aria-controls="month" aria-selected="false">Month</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="year-tab" data-toggle="tab" href="#year" role="tab" aria-controls="year" aria-selected="false">Year</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="tab-content">
+                          <div class="tab-pane active" id="today" role="tabpanel" aria-labelledby="today-tab">
+                            <div class="container-fluid pt-5">
+                              <div class="row mb-5">
+                                <div class="col-md-4 mb-4 mb-md-0">
+                                  <div class="pie-chart">
+                                    <img src="images/img-pie-chart-design.svg" alt="">
+                                    <div class="value">
+                                      74%
+                                    </div>
+                                    <label>Design</label>
+                                  </div>
+                                </div>
+                                <div class="col-md-4 mb-4 mb-md-0">
+                                  <div class="pie-chart">
+                                    <img src="images/img-pie-chart-front-end.svg" alt="">
+                                    <div class="value">
+                                      46%
+                                    </div>
+                                    <label>Front-end</label>
+                                  </div>
+                                </div>
+                                <div class="col-md-4 mb-4 mb-md-0">
+                                  <div class="pie-chart">
+                                    <img src="images/img-pie-chart-back-end.svg" alt="">
+                                    <div class="value">
+                                      62%
+                                    </div>
+                                    <label>Back-end</label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-12 mb-5 mb-md-0">
+                                  <img src="images/img-graph.svg" alt="" class="img-fluid">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="week" role="tabpanel" aria-labelledby="week-tab">
+                            <div class="container-fluid pt-5">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <p class="text-white">Week Tab content will display here</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="month" role="tabpanel" aria-labelledby="month-tab">
+                            <div class="container-fluid pt-5">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <p class="text-white">Month Tab content will display here</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="year" role="tabpanel" aria-labelledby="year-tab">
+                            <div class="container-fluid pt-5">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <p class="text-white">Year Tab content will display here</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /Header + Productivity Overview -->
+              <!-- Stats -->
+              <div class="col-md-3 px-0 px-md-3">
+                <div class="d-flex flex-column h-100">
+                  <div class="bg-blue flex-grow-1 pt-5 px-3 px-md-0">
+                    <!-- Stats - values -->
+                    <div class="row justify-content-center mt-5">
+                      <div class="col-md-10">
+                        <!-- Row Data -->
+                        <div class="row row-data">
+                          <div class="col-6">
+                            <div class="value"><strong>23.5<sup>h</sup></strong></div>
+                            <label>Design</label>
+                          </div>
+                          <div class="col-6 text-right align-self-center">
+                            <div class="value sm increase"><i class="fas fa-arrow-right icon icon-up"></i> 4%</div>
+                            <label>above avg.</label>
+                          </div>
+                        </div>
+                        <!-- /Row Data -->
+                        <!-- Row Data -->
+                        <div class="row row-data">
+                          <div class="col-6">
+                            <div class="value"><strong>38<sup>h</sup></strong></div>
+                            <label>Front-end</label>
+                          </div>
+                          <div class="col-6 text-right align-self-center">
+                            <div class="value sm decrease"><i class="fas fa-arrow-right icon icon-down"></i> 7%</div>
+                            <label>under avg.</label>
+                          </div>
+                        </div>
+                        <!-- /Row Data -->
+                        <!-- Row Data -->
+                        <div class="row row-data">
+                          <div class="col-6">
+                            <div class="value"><strong>45.5<sup>h</sup></strong></div>
+                            <label>Back-end</label>
+                          </div>
+                          <div class="col-6 text-right align-self-center">
+                            <div class="value sm increase"><i class="fas fa-arrow-right icon icon-up"></i> 2%</div>
+                            <label>above avg.</label>
+                          </div>
+                        </div>
+                        <!-- /Row Data -->
+                        <!-- Row Data -->
+                        <div class="row row-data">
+                          <div class="col-6">
+                            <div class="value md"><strong>107<sup>h</sup></strong></div>
+                            <label>Total hours</label>
+                          </div>
+                          <div class="col-6 text-right align-self-center">
+                            <div class="value sm decrease"><i class="fas fa-arrow-right icon icon-down"></i> 1%</div>
+                            <label>under avg.</label>
+                          </div>
+                        </div>
+                        <!-- /Row Data -->
+                      </div>
+                    </div>
+                    <!-- Stats - values -->
+                  </div>
+                  <div class="bg-blue flex-grow-0 bg-light-blue px-3 px-md-0">
+                    <!-- Until Deadline -->
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="container-graph-values d-flex flex-column justify-content-center">
+                          <div class="value">
+                            1<sup>d</sup> 2<sup>h</sup>
+                          </div>
+                          <label>Until Deadline</label>
+                          <img src="images/img-until-graph.svg" alt="" class="img-graph">
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /Until Deadline -->
+                  </div>
+                </div>
+              </div>
+              <!-- /Stats -->
+              <!-- Team -->
+              <div class="col-md-3 pt-md-5">
+                <div class="row justify-content-center mt-5">
+                  <div class="col-md-8">
+                    <h4>Team</h4>
+                    <h5 class="mb-4">The Weborati</h5>
+                    <!-- Swiper Team -->
+                    <div class="js-swiper-team swiper-team swiper-container h-100">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="container-fluid">
+                            <div class="row">
+                              <div class="col-6">
+                                <img src="images/img-user.jpg" alt="" class="img-user">
+                              </div>
+                              <div class="col-6">
+                                <img src="images/img-user.jpg" alt="" class="img-user">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-6">
+                                <img src="images/img-user.jpg" alt="" class="img-user">
+                              </div>
+                              <div class="col-6">
+                                <img src="images/img-user.jpg" alt="" class="img-user">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-6">
+                                <img src="images/img-user.jpg" alt="" class="img-user">
+                              </div>
+                              <div class="col-6">
+                                <img src="images/img-user.jpg" alt="" class="img-user">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-6">
+                                <img src="images/img-user.jpg" alt="" class="img-user">
+                              </div>
+                              <div class="col-6">
+                                <img src="images/img-user.jpg" alt="" class="img-user">
+                              </div>
+                            </div>
+                          </div>
+                        </div><!-- /Swiper Slide -->
+                        <div class="swiper-slide">
+                          <div class="container-fluid">
+                            <div class="row">
+                              <div class="col-6">
+                                <img src="images/img-user.jpg" alt="" class="img-user">
+                              </div>
+                              <div class="col-6">
+                                <img src="images/img-user.jpg" alt="" class="img-user">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-6">
+                                <img src="images/img-user.jpg" alt="" class="img-user">
+                              </div>
+                              <div class="col-6">
+                                <img src="images/img-user.jpg" alt="" class="img-user">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-6">
+                                <img src="images/img-user.jpg" alt="" class="img-user">
+                              </div>
+                              <div class="col-6">
+                                <img src="images/img-user.jpg" alt="" class="img-user">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-6">
+                                <img src="images/img-user.jpg" alt="" class="img-user">
+                              </div>
+                              <div class="col-6">
+                                <img src="images/img-user.jpg" alt="" class="img-user">
+                              </div>
+                            </div>
+                          </div>
+                        </div><!-- /Swiper Slide -->
+                        <div class="swiper-slide">
+                          <div class="container-fluid">
+                            <div class="row">
+                              <div class="col-6">
+                                <img src="images/img-user.jpg" alt="" class="img-user">
+                              </div>
+                              <div class="col-6">
+                                <img src="images/img-user.jpg" alt="" class="img-user">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-6">
+                                <img src="images/img-user.jpg" alt="" class="img-user">
+                              </div>
+                              <div class="col-6">
+                                <img src="images/img-user.jpg" alt="" class="img-user">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-6">
+                                <img src="images/img-user.jpg" alt="" class="img-user">
+                              </div>
+                              <div class="col-6">
+                                <img src="images/img-user.jpg" alt="" class="img-user">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-6">
+                                <img src="images/img-user.jpg" alt="" class="img-user">
+                              </div>
+                              <div class="col-6">
+                                <img src="images/img-user.jpg" alt="" class="img-user">
+                              </div>
+                            </div>
+                          </div>
+                        </div><!-- /Swiper Slide -->
+                      </div>
+                      <!-- Add Pagination -->
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <!-- /Swiper Team -->
+                  </div>
+                </div>
+              </div>
+              <!-- /Team -->
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Javascript files-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/all.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

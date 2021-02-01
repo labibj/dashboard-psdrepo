@@ -1,0 +1,40 @@
+<svg id="frontend" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="138.937" height="166.406" viewBox="0 0 138.937 166.406">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 18px;
+        fill: #838f9d;
+        font-family: Montserrat;
+      }
+
+      .cls-2 {
+        font-size: 42px;
+        fill: #f4f0e7;
+        font-family: Melbourne;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        fill: #364559;
+      }
+
+      .cls-3, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-4 {
+        fill: #f3595b;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="501" y="436.969" width="84" height="139.031" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="5" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2.236"/>
+      <feFlood result="flood" flood-opacity="0.03"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="back_circle" data-name="back circle" class="cls-3" d="M513.062,436.589a67,67,0,1,1-67,67A67,67,0,0,1,513.062,436.589Zm0,15a52,52,0,1,1-52,52A52,52,0,0,1,513.062,451.591Z" transform="translate(-446.063 -436.594)"/>
+  <path id="front_circle" data-name="front circle" class="cls-4" d="M543.006,563.885s-0.093-.091-0.244-0.254a7.491,7.491,0,1,1-9.757-11.31,0.347,0.347,0,0,1-.111-0.24A52.043,52.043,0,0,0,513,451.966h0c-0.011,0-.022,0-0.033,0a7.495,7.495,0,0,1,0-14.99l0.033,0v-0.017A67.01,67.01,0,0,1,543.006,563.885Z" transform="translate(-446.063 -436.594)"/>
+</svg>

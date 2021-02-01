@@ -1,0 +1,279 @@
+@import 'bootstrap.min.css';
+@import 'swiper.min.css';
+@import 'helper';
+@import 'buttons';
+@import 'background';
+@import 'form';
+@import 'fonts';
+@import 'variable';
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: $font_0;
+  color: map-get($colors, color_primary);
+  font-size: 16px;
+  background-color: map-get($colors, color_mono_ten);
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h4 {
+  color: map-get($colors, color_white);
+  font-weight: 700;
+}
+
+h5 {
+  color: map-get($colors, color_primary);
+  font-weight: 400;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  background-image: $url_bg_hero;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right bottom;
+  @include display-flex;
+  @include justify-content(center);
+  @include flex-direction(column);
+  @media (max-width: 991px) {
+    background-image: none;
+  }
+}
+
+.collapse.collapse-content,
+.collapsing {
+  position: fixed;
+  left: 0;
+  top: 7rem;
+  z-index: 10;
+  height: auto !important;
+  @include transition(all 0.4s cubic-bezier(0.23, 1, 0.32, 1));
+  @include transform(translate(-100%, 0));
+  &.show {
+    @include transform(translate(0, 0));
+  }
+  @media (max-width: 991px) {
+    top: 5rem;
+  }
+}
+
+.collapse:not(.show) {
+  display: block;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  color: map-get($colors, color_white);
+  font-weight: 700;
+}
+
+.hamburger {
+  display: inline-block;
+  width: 1.7rem;
+  height: 2.4rem;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  vertical-align: middle;
+  content: "";
+  background: center center / 100% 100% no-repeat;
+  transform: rotateY(0);
+  @include transition(all 0.4s cubic-bezier(0.23, 1, 0.32, 1));
+  
+  &__patty {
+    width: 100%;
+    height: 4px;
+    margin: 0 0 5px 0;
+    background: map-get($colors, color_mono);
+    @include transition(all 0.4s cubic-bezier(0.23, 1, 0.32, 1));
+    @include border-radius(100px);
+    @media (max-width: 991px) {
+      background: map-get($colors, color_white);
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  // transform burger into 'x'
+  &--close {
+    @include transform(rotate(180deg));
+    
+    .hamburger__patty {
+      &:nth-child(1) {
+        @include transform(rotate(45deg) translate(5px, 5px));
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        @include transform(rotate(-45deg) translate(5px, -5px));
+      }
+    }
+  }
+}
+
+ .navbar-toggler[aria-expanded="true"] {
+    .hamburger {
+      @include transform(rotate(180deg));
+      
+      .hamburger__patty {
+        &:nth-child(1) {
+          @include transform(rotate(45deg) translate(10px, 10px));
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:nth-child(3) {
+          @include transform(rotate(-45deg) translate(5px, -5px));
+        }
+      }
+    }
+ }
+
+.bg-blue {
+  background-color: map-get($colors, color_mono_one);
+}
+
+.row-data {
+  margin-bottom: 1rem;
+  .value {
+    color: map-get($colors, color_white);
+    font-family: $font_2, $font_1;
+    font-size: 2rem;
+    line-height: 1;
+    strong {
+      font-weight: 500;
+    }
+    &.md {
+      font-size: 2.5rem;
+    }
+    &.sm {
+      font-size: 1.125rem;
+    }
+    &.decrease {
+      color: map-get($colors, color_mono_five);
+    }
+    &.increase {
+      color: map-get($colors, color_mono_four);
+    }
+  }
+  .icon {
+    &.icon-up {
+      @include transform(rotate(-45deg));
+    }
+    &.icon-down {
+      @include transform(rotate(45deg));
+    }
+  }
+  label {
+    color: map-get($colors, color_mono_two);
+    font-size: 0.875rem;
+  }
+}
+
+.bg-light-blue {
+  background-color: map-get($colors, color_mono_three);
+}
+
+.container-graph-values {
+  // position: relative;
+  text-align: center;
+  height: 15rem;
+  .img-graph {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+  .value {
+    position: absolute;
+    bottom: $btm_spacing;
+    left: 0;
+    right: 0;
+    font-size: 2.5rem;
+    color: map-get($colors, color_white);
+    font-family: $font_2, $font_1;
+  }
+  label {
+    position: absolute;
+    bottom: $btm_spacing * (0.8);
+    left: 0;
+    right: 0;
+    color: map-get($colors, color_mono_six);
+    font-size: 0.875rem;
+  }
+}
+
+.nav.nav-tabs {
+  border-bottom: 0;
+  .nav-link {
+    font-size: 0.75rem;
+    padding: 0.5rem 0;
+    margin: 0 0.75rem;
+    color: map-get($colors, color_mono_seven);
+    text-transform: uppercase;
+  }
+  .nav-link:hover {
+    color: map-get($colors, color_secondary);
+    border-color: transparent transparent transparent transparent;
+  }
+  .nav-item.show .nav-link, .nav-link.active {
+    background-color: transparent;
+    color: map-get($colors, color_secondary);
+    border-color: transparent transparent map-get($colors, color_secondary) transparent;
+  }
+}
+
+.pie-chart {
+  position: relative;
+  text-align: center;
+  .value {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 2.8rem;
+    margin: auto;
+    font-size: 2rem;
+    color: map-get($colors, color_white);
+    font-family: $font_2, $font_1;
+    text-align: center;
+    font-weight: 500;
+  }
+  img {
+    max-width: 100%;
+  }
+  label {
+    text-align: center;
+    display: block;
+    margin-top: -1.5rem;
+    font-weight: 600;
+  }
+}
+
+.swiper-team {
+  .img-user {
+    @include border-radius(100px);
+    margin: 1rem 0;
+    max-width: 4rem;
+    max-height: 4rem;
+    width: 100%;
+  }
+  .swiper-pagination {
+    bottom: 2rem;
+    z-index: 10;
+  }
+  .swiper-pagination-bullet {
+    background-color: map-get($colors, color_mono_nine);
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: map-get($colors, color_mono_eight);
+  }
+}
